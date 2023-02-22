@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #21222A;
+    height: 90px;
+    padding: 40px;
+}
+
+.nav {
+font-size: 50px;
+font-weight: 400;
+font-family: Lobster, sans serif;
+color: orange;
+}
+.divCart {
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    
+}
+
+button {
+    height: 60px;
+    width:60px;
+    display:flex;
+    background:none;
+    border:0;
+}
+
+.count {
+    font-size: 40px;
+font-weight: 600;
+color: orange;
+font-family: Hind, sans serif;
+
+}

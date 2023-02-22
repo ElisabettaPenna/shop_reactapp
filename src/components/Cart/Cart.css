@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.cartList{
+     overflow:scroll;
+     height: 600px;
+}
+::-webkit-scrollbar {
+     width: 0px;
+   }
+.cart{
+     display:flex;
+     align-items: flex-end;  
+}
+h1{
+     font-family:Hind,sans serif; 
+     color:orange;
+     font-size:xx-large;
+     letter-spacing:3px;
+     font-weight:bold;
+     padding-left:30rem;
+}
+li {
+     list-style-type:none;
+}
+   .miniWrap{
+     display:flex;
+     padding-right:1rem;
+     gap:1rem;
+   }
+.cartItem {
+     margin-top:2rem;
+     background-color:white;
+     display:flex;
+     align-items:center;
+     justify-content:space-around;
+     font-family:Hind,sans serif;
+     height:150px;
+     width:900px;
+     border-radius: 15px;
+}
+
+.cartItem > img {
+     width:100px;
+padding-left:2rem;
+}
+
+.cartTitle {
+font-weight:bold;
+font-size:medium;
+max-width: 300px;
+}
+
+.cartPrice{
+     font-weight:bold;
+font-size:x-large;
+}
+
+.remove {
+    align-items:center;
+    justify-content:center;
+     background-color:orange;
+     height:40px;
+     width:40px;
+     color:white;
+     font-size:20px;
+     font-weight:400;
+     border-radius:20px;
+     
+}
+
+.totalSubmit{
+     font-family:Hind,sans serif;
+     display:flex;
+     flex-direction:column;
+     align-items: center;
+     margin-left:12rem;
+}
+.total{
+     color:orange;
+     font-size:xx-large;
+     font-weight:bold;
+}
+.submit{
+     background-color:orange;
+     font-family:Hind,sans serif;
+     font-weight:bold;
+     font-size:17px;
+     height:3rem;
+     width:8rem;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-radius:15px;
+}
+
+.more, .less {
+     font-family:Hind,sans serif;
+     font-weight:bold;
+     background-color:orange;
+     color:white;
+     height:1.5rem;
+     width:1.5rem;
+     border-radius:15px;
+     display:flex;
+     justify-content:center;
+}
+
+.quantity{
+    
+     font-weight:bold;
+
+}
+.moreOrLess{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     gap:1rem;
+}
