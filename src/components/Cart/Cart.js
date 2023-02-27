@@ -40,7 +40,7 @@ function increaseQuantity(cartItem){
         return(
             <li key={i}>
             <div className='cartItem'>
-              <img src= {cartItem.image}/>
+              <img src= {cartItem.image} alt={cartItem.title}/>
               <div className='moreOrLess'>
              <button className='more' onClick={()=>increaseQuantity(cartItem)}>+</button>
              <span className='quantity'>{cartItem.quantity}</span>
@@ -48,7 +48,7 @@ function increaseQuantity(cartItem){
              </div>
                   <p className="cartTitle">{cartItem.title}</p>
                   <div className="miniWrap">
-                  <p className ="cartPrice">€ {(cartItem.quantity*cartItem.price).toFixed(2)}</p>
+                  <p className ="cartPrice">€{(cartItem.quantity*cartItem.price).toFixed(2)}</p>
                   <button className='remove' onClick={()=>removeFromCart(cartItem,i)}>X</button>
                   </div>
                   </div>
@@ -66,7 +66,7 @@ function increaseQuantity(cartItem){
     {cartlist}
 </ul>
 {total !== 0 && <div className="totalSubmit">
-    <p className='total'>€ {total.toFixed(2)}</p>
+    <p className='total'>€{total.toFixed(2)}</p>
      <button type="submit" className='submit'>Acquista</button>
 </div>}
 </div>

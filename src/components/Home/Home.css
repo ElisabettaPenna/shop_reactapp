@@ -41,3 +41,42 @@ font-weight:bold;
     justify-content:space-between;
 }
 
+
+.productList{
+    padding-top: 4rem;
+    padding-left:2rem;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto ;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+}
+
+
+@media screen and (max-width:600px) {
+  
+ .productList {
+    padding-left:0;
+   
+ }   
+
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+
+.item{
+    width:250px;
+    height:350px; 
+}
+
+img{  
+    height: 200px;  
+}
+
+
+}

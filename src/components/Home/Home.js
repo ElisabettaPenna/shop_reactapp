@@ -26,11 +26,11 @@ let exist= cart.findIndex((elem) => elem.id === item.id)
     const productlist= products.map((item)=>{
         return(
             <div className= 'item'  key={item.id} id= {"item" + item.id}>
-       <img src= {item.image}/>
+       <img src= {item.image} alt={item.title}/>
        <p className='title'>{item.title}</p>
        <div>
        <p className ='price'>€ {item.price}</p>
-       <button className="miniCart" onClick={()=>addToCart(item)}><img src="./cart.png"/></button>
+       <button className="miniCart" onClick={()=>addToCart(item)}><img src="./cart.png" alt="carrello"/></button>
        </div>
        </div>
         )
@@ -44,9 +44,9 @@ let exist= cart.findIndex((elem) => elem.id === item.id)
         <>
        <div className='productList'>
    
-          
+        <div className='wrapper'>
 {productlist}
-
+</div>  
        </div>
         </>
     )
